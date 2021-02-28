@@ -48,8 +48,9 @@ somthing
     <hr>
     <li>Canabies</li>
     <hr>
-    <p class="title">
-    About canabies:
+   
+    <div onclick="show('detail1')">About canabies:</div>
+     <p class="title" id="detail1">
     What does it look like?
     Soft black resin, furry green leaves and hard brown lumps, 
     cannabis can look very different depending on its type – 
@@ -311,5 +312,17 @@ somthing
     
     <hr>
   </ul>
+  <scipt>
+    function show(parameter) {
+ 
+          var show = document.getElementById(parameter).display;
+          if(display == 'none') {
+              document.getElementById(parameter).display = 'block';
+           }
+            else {
+              document.getElementById(parameter).display = 'mone';
+           }
+    }   
+  </script>
 </body>
 </html>
