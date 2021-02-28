@@ -15,6 +15,10 @@ background-size:1500px 3400px;
 color:blue; 
 background-color:white;
 }
+.hide
+{
+    display:none;
+}
 </style>
 <body class="sides">
 <h1><b class="title">Substance Abuse</b></h1>
@@ -49,8 +53,8 @@ somthing
     <li>Canabies</li>
     <hr>
    
-    <div onclick="show('detail1')">About canabies:</div>
-     <p class="title" id="detail1">
+    <button onclick="show('detail1')">About canabies:</button>
+     <p class="title hide" id="detail1">
     What does it look like?
     Soft black resin, furry green leaves and hard brown lumps, 
     cannabis can look very different depending on its type – 
@@ -317,10 +321,10 @@ somthing
  
           var show = document.getElementById(parameter).display;
           if(display == 'none') {
-              document.getElementById(parameter).display = 'block';
+              document.getElementById(parameter).classList.toggle('hide');
            }
             else {
-              document.getElementById(parameter).display = 'mone';
+              document.getElementById(parameter).classList.toggle('hide');
            }
     }   
   </script>
